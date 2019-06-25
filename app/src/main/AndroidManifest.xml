@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.marketing.abdiubl">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.BerandaActivity"></activity>
+        <activity android:name=".BerandaActivity"></activity>
+        <activity android:name=".fragment.FragmentBeranda" />
+        <activity android:name=".activity.BerandaActivity" />
         <activity android:name=".ActivityLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
